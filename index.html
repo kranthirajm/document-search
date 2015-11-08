@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>Document search</title>
+  <style type="text/css">
+    /* Reset */
+    body {
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      font-size: small;
+      padding: 50px 20px;
+    }
+    input {
+      font-size: 2em;
+    }
+    .results-banner {
+      padding: 50px 0 10px 10px
+    }
+    .results-banner h3{
+      margin: 0;
+    }
+    #results {
+      padding: 10px 0;
+      border-spacing: 0;
+    }
+    #results td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="search" id="searchBox" size="50"/>
+  <select id="searchType">
+    <option value="OR">OR</option>
+    <option value="AND">AND</option>
+  </select>
+  <button id="searchButton">Search</button>
+  <div class="results-banner"><h3>Results</h3></div>
+  <table id="results">
+  </table>
+
+<script src="./data.js"></script>
+<script src="./search.js"></script>
+
+</script>
+</body>
+</html>
